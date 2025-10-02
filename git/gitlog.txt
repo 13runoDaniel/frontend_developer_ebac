@@ -1,0 +1,5 @@
+git log
+git log -n2
+git log --oneline
+git log --stat
+git log -n3 --oneline
