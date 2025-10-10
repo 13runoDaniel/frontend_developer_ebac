@@ -103,3 +103,19 @@ section h2 {
 #economy .articles article a {
     background-color: #ff9f1a;
 }
+
+#anime {
+    background-color: #cdcdfa;
+}
+
+#anime .articles article a {
+    background-color: #191970;
+}
+
+#technology {
+    background-color: rgb(255, 186, 255);
+}
+
+#technology .articles article a {
+    background-color: rgb(109, 9, 109);
+}
