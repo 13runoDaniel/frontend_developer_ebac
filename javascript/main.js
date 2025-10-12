@@ -99,6 +99,39 @@ function subtrairNumero( numeroA, numeroB, numeroC ) {
 const resultadoDaSubtracao = subtrairNumero( 40, 30, 5 );
 console.log( 'O resultado da subtração do número foi: ' + resultadoDaSubtracao );    // O resultado da subtração do número foi: 5
 
+let ninjaDaFolha = 'Naruto';
+function saudacoes() {
+    console.log( `Olá ${ ninjaDaFolha }` );    // Olá Naruto
+}
+saudacoes();
+
+function convocacao() {
+    let ninjaDaFolha = `Sasuke Uchiha`;
+    console.log( `Você foi convodado ${ ninjaDaFolha }!` );    // Você foi convodado Sasuke Uchiha!
+}
+convocacao();
+console.log( ninjaDaFolha );    // Naruto
+
+function parabenizandoNinja() {
+    let ninjaDaFolha = 'Naruto';
+
+    function parabens() {
+        console.log( `Parabéns ${ ninjaDaFolha }` );    // Está aqui seu prêmio Naruto
+    }
+
+    function premio() {
+        console.log( `Está aqui seu prêmio ${ ninjaDaFolha }` );    // Está aqui seu prêmio Naruto
+    }
+
+    return {
+        parabens: parabens,
+        premio: premio
+    };
+}
+const ninjaPremiado = parabenizandoNinja();
+ninjaPremiado.parabens();
+ninjaPremiado.premio();
+
 
 
 
@@ -129,3 +162,10 @@ console.log( 'O resultado da subtração do número foi: ' + resultadoDaSubtraca
 // function nome( comParametro ){}     Definida para receber um ou mais valores de entrada
 // ( function (){} )()     Immediately Invoked Function definida e executada no mesmo instante logo após sua criação
 // return     Define o valor que uma função deve devolver ou enviar de volta para o local de onde ela foi chamada
+// Escopo     Refere-se ao contexto onde variáveis, funções e outros identificadores são visíveis e acessíveis.
+// Escopo Global     Variáveis e funções declaradas fora de qualquer bloco ou função. São acessíveis de qualquer lugar do código
+// Escopo Local     Variáveis e funções declaradas dentro de um escopo específico
+// Escopo de Função     Declaradas dentro de uma função (acessíveis apenas dentro dela)
+// Escopo de Bloco     Declaradas com 'let' ou 'const' dentro de um bloco {} (if, for, while, do while)
+// Escopo Léxico     Significa que o escopo de uma variável é determinado pela sua posição no código-fonte (onde foi escrita), e não por onde a função é chamada ou executada
+// Closure     Ocorre quando uma função interna (aninhada) mantém o acesso ao escopo de sua função externa, mesmo depois que a função externa já foi executada
