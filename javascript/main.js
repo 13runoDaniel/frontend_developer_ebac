@@ -21,6 +21,17 @@ number = parseInt( number );
 console.log( number );    // 5
 console.log( typeof( parseInt( 8 ) ) );    // number
 
+const listaDeArrays = [ 'html', 'css', 'javascript' ];
+console.log( listaDeArrays );    // [ 'html', 'css', 'javascript' ]
+console.log( typeof( listaDeArrays ) );    // object
+console.log( listaDeArrays[ 2 ] );    // javascript
+console.log( listaDeArrays.length );    // 3
+listaDeArrays.push( 'PowerShell' );
+console.log( listaDeArrays.length );    // 4
+console.log( listaDeArrays );    // [ 'html', 'css', 'javascript', 'PowerShell' ]
+console.log( listaDeArrays.splice( 2, 2 ) );    // [ 'javascript', 'PowerShell' ]
+console.log( listaDeArrays );    // [ 'html', 'css' ]
+
 
 
 
@@ -34,3 +45,7 @@ console.log( typeof( parseInt( 8 ) ) );    // number
 // NaN     Valor especial que significa não é um número
 // typeof()     Verifica o tipo de dados de uma variável
 // parseInt()     Analisa uma string e retorna um número inteiro
+// [  ]     Array é uma lista ordenada de valores que podem ser de qualquer tipo
+// .length     Retorna o número de elementos de um array ou o número de caracteres de uma string
+// push()     Adiciona um ou mais elementos ao final de um array
+// splice()     Remove ou substitui elementos em qualquer posição de um array
