@@ -77,6 +77,28 @@ const notaDoNinjaGenin = Number( prompt( 'Nota do genin: ' ) );
 const requisitoParaChunin = notaDoNinjaGenin >= 97 || idadeDoNinjaGenin >= 21 ? aprovadoChunin : reprovadoChunin;
 console.log( requisitoParaChunin );
 
+function olaMundo() {
+    return 'Olá mundo';
+}
+console.log( olaMundo() );    // Olá mundo
+
+function descobrirIdade( anoDeNascimento ) {
+    return 2025 - anoDeNascimento;
+}
+console.log( descobrirIdade( 1994 ) );    // 31
+
+function somarNumeros( numeroA, numeroB, numeroC ) {
+    return  numeroA + numeroB + numeroC;
+}
+console.log( somarNumeros( 7, 10, 8 ) );    // 25
+
+function subtrairNumero( numeroA, numeroB, numeroC ) {
+    let resultado = numeroA - numeroB - numeroC;
+    return resultado;
+}
+const resultadoDaSubtracao = subtrairNumero( 40, 30, 5 );
+console.log( 'O resultado da subtração do número foi: ' + resultadoDaSubtracao );    // O resultado da subtração do número foi: 5
+
 
 
 
@@ -103,3 +125,7 @@ console.log( requisitoParaChunin );
 // Number()     Converte um valor de qualquer tipo para o tipo número
 // &&     AND Verifica se todas as condições conectadas são verdadeiras
 // ||     OR Verifica se pelo menos uma das condições conectadas são verdadeiras
+// function nome(){}     Definida para não receber nenhum valor de entrada
+// function nome( comParametro ){}     Definida para receber um ou mais valores de entrada
+// ( function (){} )()     Immediately Invoked Function definida e executada no mesmo instante logo após sua criação
+// return     Define o valor que uma função deve devolver ou enviar de volta para o local de onde ela foi chamada
