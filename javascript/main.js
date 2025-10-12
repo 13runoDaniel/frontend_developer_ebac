@@ -49,6 +49,34 @@ do {
     timeSete ++;
 } while ( timeSete < ninja.length );
 
+const prompt = require( 'prompt-sync' )();
+const idadeDoNinja = Number( prompt( 'Qual é sua idade? ' ) );
+if ( idadeDoNinja >= 16 ) {
+    console.log( 'Idade para ser chunin.' );
+} else if ( idadeDoNinja >= 13 ) {
+    console.log( 'Idade para ser genin.' );
+} else {
+    console.log( 'Precisa ir para a academia ninja.' );
+}
+
+const aprovado = 'Você pode ser um genin';
+const reprovado = 'Você não pode ser um genin';
+const notaNaAcademia = Number( prompt( 'Qual a sua nota final: ' ) );
+const exameFinal = notaNaAcademia >= 7 ? aprovado : reprovado;
+console.log( exameFinal );
+
+const idadeDoNinjaGraduado = Number( prompt( 'Idade: ' ) );
+const notaNaGraduacao = Number( prompt( 'Nota: ' ) );
+const requisitoParaGenin = idadeDoNinjaGraduado > 12 && notaNaGraduacao >= 7 ? aprovado : reprovado;
+console.log( requisitoParaGenin );
+
+const aprovadoChunin = 'Você pode ser um chunin';
+const reprovadoChunin = 'Você não pode ser um chunin';
+const idadeDoNinjaGenin = Number( prompt( 'Idade do genin: ' ) );
+const notaDoNinjaGenin = Number( prompt( 'Nota do genin: ' ) );
+const requisitoParaChunin = notaDoNinjaGenin >= 97 || idadeDoNinjaGenin >= 21 ? aprovadoChunin : reprovadoChunin;
+console.log( requisitoParaChunin );
+
 
 
 
@@ -69,3 +97,9 @@ do {
 // for (){}     Estrutura de controle de fluxo usada para repetir um bloco de código várias vezes
 // while (){}     Estrutura de controle de fluxo usada para repetir um bloco de código, mas de forma condicional
 // do {} while ()     Variação do laço while, a diferença é que o bloco de código é executado pelo menos uma vez
+// require( 'prompt-sync' )()     Obtém entrada de dados do usuário diretamente no terminal.
+// if (){} else if (){} else {}     Estrutura de controle de fluxo que permite que o código tome decisões e execute blocos de código diferentes com base em condições
+// const operadorTernario = ( condição ) ? valor_se_verdadeiro : valor_se_falso     Variação do if (){} else if (){} else {}
+// Number()     Converte um valor de qualquer tipo para o tipo número
+// &&     AND Verifica se todas as condições conectadas são verdadeiras
+// ||     OR Verifica se pelo menos uma das condições conectadas são verdadeiras
