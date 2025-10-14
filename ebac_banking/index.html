@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./coin.svg">
+    <title>EBAC Banking</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Depósitos</h2>
+        <form>
+            <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
+            <input id="" type="number" required placeholder="Número da conta" />
+            <input id="" type="number" required placeholder="Valor" />
+            <textarea placeholder="Descrição (opcional)"></textarea>
+            <button id="btn-depositar" type="submit">Depositar</button>
+        </form>
+    </div>
+    <script>
+            console.log( document.getElementsByTagName( 'input' ) );
+            let inputs = document.getElementsByTagName( 'input' );
+            console.log( inputs[ 2 ] );
+            console.log( document.getElementById( 'nome-beneficiario' ) );
+            console.log( document.getElementById( 'btn-depositar' ) );
+            console.log( document.getElementsByTagName( 'form' )[ 0 ].getElementsByTagName( 'button' ) );
+            console.log( document.getElementsByClassName( 'container' ) );
+            console.log( document.querySelector( 'button' ) );
+            console.log( document.querySelector( 'input' ) );
+            console.log( document.querySelector( 'input[type=number]' ) );
+            console.log( document.querySelectorAll( 'input[type=number]' ) );
+            console.log( document.querySelector( 'h3' ) );
+            console.log( document.body );
+            console.log( document.head );
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- 
+document     Objeto que representa a própria página web (o documento HTML)
+.getElementsByTagName()     Seleciona todos os elementos cujas tags correspondem ao nome especificado
+.getElementById()     Seleciona um único elemento pelo seu atributo id
+.getElementsByClassName()     Seleciona todos os elementos que possuem as classes especificadas no atributo class
+.querySelector()     Seleciona o primeiro elemento que corresponde ao seletor CSS especificado
+.querySelectorAll()     Seleciona todos os elementos que correspondem ao seletor CSS especificado
+// null     Representa a ausência intencional de qualquer valor de objeto
+-->
