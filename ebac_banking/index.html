@@ -12,7 +12,7 @@
     <div class="container">
         <h1>EBAC Banking</h1>
         <h2>Depósitos</h2>
-        <form>
+        <form id="form-deposito">
             <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
             <input id="numero-conta" type="number" required placeholder="Número da conta" />
             <input id="valor-deposito" type="number" required placeholder="Valor" />
@@ -20,54 +20,6 @@
             <button id="btn-depositar" type="submit">Depositar</button>
         </form>
     </div>
-    <script>
-            console.log( document.getElementsByTagName( 'input' ) );
-            let inputs = document.getElementsByTagName( 'input' );
-            console.log( inputs[ 2 ] );
-            console.log( document.getElementById( 'nome-beneficiario' ) );
-            console.log( document.getElementById( 'btn-depositar' ) );
-            console.log( document.getElementsByTagName( 'form' )[ 0 ].getElementsByTagName( 'button' ) );
-            console.log( document.getElementsByClassName( 'container' ) );
-            console.log( document.querySelector( 'button' ) );
-            console.log( document.querySelector( 'input' ) );
-            console.log( document.querySelector( 'input[type=number]' ) );
-            console.log( document.querySelectorAll( 'input[type=number]' ) );
-            console.log( document.querySelector( 'h3' ) );
-            console.log( document.body );
-            console.log( document.head );
-            let nome = document.getElementById( 'nome-beneficiario' );
-            console.log( nome );
-            nome.value = 'Bruno Daniel de Assis';
-            console.log( nome.type );
-            console.log( nome.required );
-            console.log( nome.placeholder );
-            nome.value = '';
-            let nomeBeneficiario = document.getElementById( 'nome-beneficiario' );
-            nomeBeneficiario.value = 'Bruno Daniel';
-            console.log( nomeBeneficiario.value.split( ' ' ).length );
-            const btnSubmit = document.getElementById( 'btn-depositar' );
-            btnSubmit.disabled = true;
-            if ( nomeBeneficiario.value.split( ' ' ).length > 2 ) {
-                btnSubmit.disabled = false;
-            }
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- 
-document     Objeto que representa a própria página web (o documento HTML)
-.getElementsByTagName()     Seleciona todos os elementos cujas tags correspondem ao nome especificado
-.getElementById()     Seleciona um único elemento pelo seu atributo id
-.getElementsByClassName()     Seleciona todos os elementos que possuem as classes especificadas no atributo class
-.querySelector()     Seleciona o primeiro elemento que corresponde ao seletor CSS especificado
-.querySelectorAll()     Seleciona todos os elementos que correspondem ao seletor CSS especificado
-// null     Representa a ausência intencional de qualquer valor de objeto
-// .value     Obtém ou define o conteúdo atual de elementos que armazenam um valor
-// .placeholder     Obtém ou define a dica de texto que aparece dentro de um campo de entrada antes de ser preenchido
-//.required     Obtém ou define se o campo do formulário é obrigatório (deve ser preenchido)
-// split()     Divide uma string em um array de substrings usando um delimitador especificado
-// disabled()     Tornar um elemento de formulário inativo e não interativo para o usuário
--->
