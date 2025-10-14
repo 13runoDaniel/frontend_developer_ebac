@@ -14,8 +14,8 @@
         <h2>Depósitos</h2>
         <form>
             <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
-            <input id="" type="number" required placeholder="Número da conta" />
-            <input id="" type="number" required placeholder="Valor" />
+            <input id="numero-conta" type="number" required placeholder="Número da conta" />
+            <input id="valor-deposito" type="number" required placeholder="Valor" />
             <textarea placeholder="Descrição (opcional)"></textarea>
             <button id="btn-depositar" type="submit">Depositar</button>
         </form>
@@ -35,6 +35,21 @@
             console.log( document.querySelector( 'h3' ) );
             console.log( document.body );
             console.log( document.head );
+            let nome = document.getElementById( 'nome-beneficiario' );
+            console.log( nome );
+            nome.value = 'Bruno Daniel de Assis';
+            console.log( nome.type );
+            console.log( nome.required );
+            console.log( nome.placeholder );
+            nome.value = '';
+            let nomeBeneficiario = document.getElementById( 'nome-beneficiario' );
+            nomeBeneficiario.value = 'Bruno Daniel';
+            console.log( nomeBeneficiario.value.split( ' ' ).length );
+            const btnSubmit = document.getElementById( 'btn-depositar' );
+            btnSubmit.disabled = true;
+            if ( nomeBeneficiario.value.split( ' ' ).length > 2 ) {
+                btnSubmit.disabled = false;
+            }
     </script>
 </body>
 </html>
@@ -50,4 +65,9 @@ document     Objeto que representa a própria página web (o documento HTML)
 .querySelector()     Seleciona o primeiro elemento que corresponde ao seletor CSS especificado
 .querySelectorAll()     Seleciona todos os elementos que correspondem ao seletor CSS especificado
 // null     Representa a ausência intencional de qualquer valor de objeto
+// .value     Obtém ou define o conteúdo atual de elementos que armazenam um valor
+// .placeholder     Obtém ou define a dica de texto que aparece dentro de um campo de entrada antes de ser preenchido
+//.required     Obtém ou define se o campo do formulário é obrigatório (deve ser preenchido)
+// split()     Divide uma string em um array de substrings usando um delimitador especificado
+// disabled()     Tornar um elemento de formulário inativo e não interativo para o usuário
 -->
