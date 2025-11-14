@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./check.svg">
+    <title>Formulário JavaScript</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário JavaScript</h1>
+        <form id="form" action="">
+            <div>
+                <input type="number" name="" id="campo-a" min="0" max="10" placeholder="Campo A" />
+            </div>
+            <div>
+                <input type="number" name="" id="campo-b" min="0" max="10" placeholder="Campo B" />
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>            
+        </form>
+        <div class="message">
+            <p id="empty-field-message">
+                Atenção!! Preencha os campos A e B
+            </p>
+            <p id="equal-field-message">
+                Reprovado <b>Campo A</b> e <b>Campo B</b> iguais
+            </p>
+            <p id="rejected-message">
+                Reprovado <b>Campo A</b> maior que <b>Campo B</b>
+            </p>
+            <p id="approved-message">
+                Aprovado
+            </p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
