@@ -5,39 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./calculator.svg">
     <title>Calculadora de médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/image/logo.png" alt="Capelo e diploma">
-        <h1>Calculadora de médias</h1>
-    </header>
-    <form action="">
-        <input type="text" name="" id="" placeholder="Nome da atividade" required />
-        <input type="number" name="" id="" placeholder="Nota da atividade" required min="0" max="10" />
-        <button type="submit">Adicionar +</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome da atividade</th>
-                <th>Nota da atividade</th>
-                <th>Aprovado?</th>
-            </tr>
-        </thead>
-        <tbody> 
-            <tr>
-                <td>Atividade 1</td>
-                <td>7</td>
-                <td><img src="./assets/image/aprovado.png" alt="Emoji festejando" /></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Média final</td>
-                <td>7</td>
-                <td>Aprovado</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="container">
+        <header>
+            <img src="./assets/image/logo.png" alt="Capelo e diploma">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form action="">
+            <input type="text" name="" id="" placeholder="Nome da atividade" required />
+            <input type="number" name="" id="" placeholder="Nota da atividade" required min="0" max="10" />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota da atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>Atividade 1</td>
+                    <td>7</td>
+                    <td><img src="./assets/image/aprovado.png" alt="Emoji festejando" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média final</td>
+                    <td>7</td>
+                    <td><span class="result approved">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
